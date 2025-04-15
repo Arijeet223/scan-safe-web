@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Scan Safe</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <a href="index.html"><i class="fas fa-shield-alt"></i> SCAN SAFE</a>
+      </div>
+      <div class="nav-links">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href="#" id="searchBtn"><i class="fas fa-search"></i></a>
+        <a href="signin.html"><i class="fas fa-user"></i></a>
+        <a href="#" id="settingsBtn"><i class="fas fa-cog"></i></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Contact Us</h1>
+      <p>Get in touch with the Scan Safe team</p>
+    </section>
+
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="contact-info">
+          <h2>We're Here To Help</h2>
+          <p>Have questions, suggestions, or want to report a scam? Our team is ready to assist you.</p>
+          
+          <div class="contact-methods">
+            <div class="contact-method">
+              <div class="method-icon"><i class="fas fa-envelope"></i></div>
+              <div class="method-details">
+                <h3>Email Us</h3>
+                <p>contact@scansafe.org</p>
+                <p class="response-time">Response time: 24-48 hours</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon"><i class="fas fa-phone"></i></div>
+              <div class="method-details">
+                <h3>Call Us</h3>
+                <p>Toll-Free: 1800-123-4567</p>
+                <p class="response-time">Available: Mon-Fri, 9AM-6PM IST</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="method-details">
+                <h3>Visit Us</h3>
+                <p>123 Cyber Security Road</p>
+                <p>Tech Park, Bengaluru - 560001</p>
+              </div>
+            </div>
+            
+            <div class="contact-method">
+              <div class="method-icon"><i class="fas fa-comment"></i></div>
+              <div class="method-details">
+                <h3>Live Chat</h3>
+                <p>Chat with our support team</p>
+                <button class="btn btn-small">Start Chat</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-connect">
+            <h3>Connect With Us</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+              <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact-form-container">
+          <h2>Send Us a Message</h2>
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone">Phone Number (Optional)</label>
+              <input type="tel" id="phone" placeholder="Enter your phone number">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" required>
+                <option value="" disabled selected>Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="report">Report a Scam</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" rows="6" placeholder="Enter your message" required></textarea>
+            </div>
+            
+            <div class="form-options">
+              <div class="remember-me">
+                <input type="checkbox" id="newsletter">
+                <label for="newsletter">Subscribe to our newsletter</label>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    <section class="faq-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How quickly will you respond to my inquiry?</h3>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>We aim to respond to all inquiries within 24-48 hours during business days. For urgent matters related to active scams, we prioritize responses.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>I've been scammed. Can you help me recover my money?</h3>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>While we can't directly recover funds, we can guide you through the reporting process with your bank and law enforcement. The sooner you act, the better your chances of recovery.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>Do you offer in-person training for organizations?</h3>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>Yes, we provide customized security training sessions for businesses, schools, and community groups. Contact us through the form above to discuss your specific needs.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-question">
+            <h3>How can I support Scan Safe's mission?</h3>
+            <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+          </div>
+          <div class="faq-answer">
+            <p>You can support us by spreading awareness, reporting scams you encounter, volunteering for our community programs, or partnering with us if you represent an organization.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <i class="fas fa-shield-alt"></i> SCAN SAFE
+      </div>
+      <div class="footer-links">
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Service</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Scan Safe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // FAQ toggle functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      const faqItems = document.querySelectorAll('.faq-item');
+      
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        const answer = item.querySelector('.faq-answer');
+        const toggleIcon = item.querySelector('.faq-toggle i');
+        
+        // Initially hide all answers
+        answer.style.display = 'none';
+        
+        question.addEventListener('click', function() {
+          // Toggle answer visibility
+          if (answer.style.display === 'none') {
+            answer.style.display = 'block';
+            toggleIcon.classList.remove('fa-plus');
+            toggleIcon.classList.add('fa-minus');
+            item.classList.add('active');
+          } else {
+            answer.style.display = 'none';
+            toggleIcon.classList.remove('fa-minus');
+            toggleIcon.classList.add('fa-plus');
+            item.classList.remove('active');
+          }
+        });
+      });
+    });
+    
+    // Contact form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      showAlert('Thank you for your message. We\'ll get back to you soon!', 'success');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
