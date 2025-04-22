@@ -1,27 +1,39 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+import { BrowserRouter as Router } from 'react-router-dom'
+import { motion } from 'framer-motion'
+import Navbar from './components/Navbar'
+import Hero from './components/Hero'
+import RiseOfQRScams from './components/RiseOfQRScams'
+import PainPoints from './components/PainPoints'
+import RealLifeCases from './components/RealLifeCases'
+import HowQRScamsWork from './components/HowQRScamsWork'
+import WhyIndia from './components/WhyIndia'
+import RedFlags from './components/RedFlags'
+import WhatToDo from './components/WhatToDo'
+import Footer from './components/Footer'
 
-const queryClient = new QueryClient();
+function App() {
+  return (
+    <Router>
+      <div className="min-h-screen bg-gray-50">
+        <Navbar />
+        <motion.main
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Hero />
+          <RiseOfQRScams />
+          <PainPoints />
+          <RealLifeCases />
+          <HowQRScamsWork />
+          <WhyIndia />
+          <RedFlags />
+          <WhatToDo />
+        </motion.main>
+        <Footer />
+      </div>
+    </Router>
+  )
+}
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
-
-export default App;
+export default App
