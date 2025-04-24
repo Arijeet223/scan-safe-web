@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
-import { AlertTriangle } from 'lucide-react'
+import { AlertTriangle, QrCode } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
@@ -12,12 +13,21 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <AlertTriangle className="h-8 w-8 text-cyan-400" />
-            <span className="text-xl font-bold text-cyan-400">
-              QR Code Scams
-            </span>
+            <Link to="/" className="flex items-center space-x-2">
+              <AlertTriangle className="h-8 w-8 text-cyan-400" />
+              <span className="text-xl font-bold text-cyan-400">
+                QR Code Scams
+              </span>
+            </Link>
           </div>
-          <div className="hidden md:flex space-x-6">
+          <div className="hidden md:flex items-center space-x-6">
+            <Link 
+              to="/scanner" 
+              className="flex items-center space-x-2 text-gray-300 hover:text-cyan-400 transition-colors"
+            >
+              <QrCode className="h-5 w-5" />
+              <span>Scanner</span>
+            </Link>
             <a href="#rise" className="text-gray-300 hover:text-cyan-400 transition-colors">
               The Rise
             </a>
