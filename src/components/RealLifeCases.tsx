@@ -6,19 +6,22 @@ const cases = [
     icon: MapPin,
     location: 'Khajuraho',
     title: 'Tourist QR Code Scam',
-    description: 'Scammers replaced legitimate QR codes at tourist sites with malicious ones, leading to financial losses for unsuspecting visitors.'
+    description: 'Scammers replaced legitimate QR codes at tourist sites with malicious ones, leading to financial losses for unsuspecting visitors.',
+    link: 'https://indianexpress.com/article/trending/trending-in-india/qr-code-scam-fraudster-swap-payment-code-to-steal-money-in-khajuraho-viral-9779540/'
   },
   {
     icon: AlertCircle,
     location: 'Pune',
     title: 'Police QR Code Fraud',
-    description: 'Criminals posed as police officers and distributed QR codes for \'verification\', resulting in multiple victims losing money.'
+    description: 'Criminals posed as police officers and distributed QR codes for \'verification\', resulting in multiple victims losing money.',
+    link: 'https://www.indiatoday.in/technology/news/story/police-officer-from-pune-loses-rs-23-lakh-after-scanning-qr-code-to-pay-at-local-bakery-2650360-2024-12-16'
   },
   {
     icon: BarChart2,
     location: 'Bengaluru',
     title: 'Cybercrime Statistics',
-    description: 'Over 500 QR code-related cybercrime cases reported in 2023, with losses exceeding ₹2 crores.'
+    description: 'Over 500 QR code-related cybercrime cases reported in 2023, with losses exceeding ₹2 crores.',
+    link: 'https://www.indiatoday.in/technology/news/story/bengaluru-man-loses-rs-2-lakh-in-olx-qr-code-scam-2592795-2024-09-03'
   }
 ]
 
@@ -39,13 +42,16 @@ const RealLifeCases = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {cases.map((case_, index) => (
-              <motion.div
+              <motion.a
                 key={index}
+                href={case_.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="bg-[#0a192f] p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-colors"
+                className="bg-[#0a192f] p-6 rounded-xl border border-cyan-400/20 hover:border-cyan-400/40 transition-colors cursor-pointer block"
               >
                 <div className="flex items-center space-x-2 mb-4">
                   <div className="flex items-center justify-center w-8 h-8 bg-cyan-400/10 rounded-full border border-cyan-400/20">
@@ -55,7 +61,7 @@ const RealLifeCases = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{case_.title}</h3>
                 <p className="text-gray-300">{case_.description}</p>
-              </motion.div>
+              </motion.a>
             ))}
           </div>
         </motion.div>
