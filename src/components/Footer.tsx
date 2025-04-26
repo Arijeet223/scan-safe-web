@@ -87,7 +87,7 @@ const Footer = () => {
             </p>
           </div>
           <p className="text-sm text-center">
-            © {new Date().getFullYear()} QR Code Scams Awareness. All rights reserved.
+            © {new Date().getFullYear()} Scan Safe. All rights reserved.
           </p>
         </motion.div>
       </div>

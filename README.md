@@ -1,73 +1,87 @@
-# Welcome to your Lovable project
+# QR Code Scam Awareness Website
 
-## Project info
+A website built to raise awareness about QR code scams, featuring real-life case studies and prevention tips.
 
-**URL**: https://lovable.dev/projects/142095e5-adc8-486a-a680-7916a5ad0b5a
+## Features
 
-## How can I edit this code?
+- Real-life case studies from Khajuraho, Pune, and Bengaluru
+- QR code scanning functionality
+- Interactive UI with animations
+- Mobile-responsive design
 
-There are several ways of editing your application.
+## Technologies Used
 
-**Use Lovable**
+- Vite
+- React
+- TypeScript
+- Tailwind CSS
+- shadcn-ui
+- Framer Motion
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/142095e5-adc8-486a-a680-7916a5ad0b5a) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+### Prerequisites
 
-**Use your preferred IDE**
+- Node.js (v16 or higher)
+- npm (v7 or higher)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+```bash
+git clone <repository-url>
+```
 
-Follow these steps:
+2. Navigate to the project directory:
+```bash
+cd scan-safe-web
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Install dependencies:
+```bash
+npm install
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+4. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+The website will be available at `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## How to Share This Project
 
-**Use GitHub Codespaces**
+### Option 1: Share the Repository
+1. Create a new repository on GitHub
+2. Push this project to the new repository
+3. Share the repository URL with others
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Option 2: Share the Build Files
+1. Build the project:
+```bash
+npm run build
+```
+2. The built files will be in the `dist` directory
+3. Share the `dist` directory with others
 
-## What technologies are used for this project?
+### Option 3: Deploy to a Hosting Service
+1. Build the project:
+```bash
+npm run build
+```
+2. Deploy the `dist` directory to a hosting service like:
+   - Vercel
+   - Netlify
+   - GitHub Pages
+3. Share the deployment URL
 
-This project is built with:
+## Project Structure
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `src/components/` - React components
+- `src/components/ui/` - UI components from shadcn-ui
+- `public/` - Static assets
+- `src/` - Main source code
 
-## How can I deploy this project?
+## Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/142095e5-adc8-486a-a680-7916a5ad0b5a) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Feel free to submit issues and enhancement requests!

@@ -16,7 +16,7 @@ const Navbar = () => {
             <Link to="/" className="flex items-center space-x-2">
               <AlertTriangle className="h-8 w-8 text-cyan-400" />
               <span className="text-xl font-bold text-cyan-400">
-                QR Code Scams
+                Scan Safe
               </span>
             </Link>
           </div>
